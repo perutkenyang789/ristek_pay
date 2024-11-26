@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:hexcolor/hexcolor.dart';
 import 'package:ristek_pay/screens/pre_page.dart';
 import 'package:ristek_pay/screens/login_page.dart';
 import 'package:ristek_pay/screens/home_page.dart';
@@ -12,9 +14,19 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Ristek Pay',
-      home: PrePage(),
+      theme: ThemeData(
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.deepPurple,
+        ).copyWith(
+          secondary: HexColor('#5038BC'),
+          tertiary: HexColor('#FFFFFF'),
+        ),
+        textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
+      ),
+      home: const PrePage(),
     );
   }
 }
