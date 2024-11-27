@@ -1,16 +1,13 @@
 # ristek_pay
 
-A new Flutter project.
+I have recently got the opportunity to be a part of Pekan Ristek 2024, a 2-week event held by Ristek Fasilkom UI. I joined as a Open Class Mentee hosted by the Mobile Development SIG. On this class we were taught how to develop a mobile application using Flutter. The application that we were developing as an assignment is called Ristek Pay. This is the repository for the assignment.
 
-## Getting Started
+### Figma Design
+You can view the design of the application on [this link](ristek.link/TugasOCMobDev2024)
 
-This project is a starting point for a Flutter application.
+### Assignment Slide
+You can view the slide of the assignment on [this link](https://docs.google.com/presentation/d/16MnjRdGRc9lqC5QONiZvADmd8psgpvjGMfU0ACWyhbU/edit#slide=id.g31828fbab04_0_5)
 
-A few resources to get you started if this is your first Flutter project:
+### Repository Link
+You can view the repository of the assignment on [this link](https://github.com/perutkenyang789/ristek_pay)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
