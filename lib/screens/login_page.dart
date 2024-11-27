@@ -62,25 +62,86 @@ class LoginPage extends StatelessWidget {
                 onPressed: () {
                   if (nameController.text == 'Ristek' &&
                       passwordController.text == '123456') {
-                    Navigator.of(context).pushReplacement(
+                    Navigator.of(context).pushAndRemoveUntil(
                       MaterialPageRoute(
                         builder: (context) => HomePage(),
                       ),
+                      (Route<dynamic> route) => false,
                     );
                   } else {
-                    // TODO: Fix Alert Dialog
                     showDialog(
                       context: context,
                       builder: (BuildContext context) {
                         return AlertDialog(
-                          title: const Text('Login Failed'),
-                          content: const Text('Please check your credentials'),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16.0),
+                          ),
+                          title: Row(
+                            children: [
+                              Icon(
+                                Icons.error_outline,
+                                color: Colors.red,
+                              ),
+                              const SizedBox(width: 10),
+                              const Text(
+                                'Login Failed',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                          content: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                'Your credentials are incorrect. Please try again.',
+                                style: TextStyle(
+                                  fontSize: 16.0,
+                                  color: Colors.grey[800],
+                                ),
+                              ),
+                              const SizedBox(height: 20),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.lock_outline,
+                                    color: Colors.grey,
+                                    size: 18,
+                                  ),
+                                  const SizedBox(width: 5),
+                                  SizedBox(
+                                    width: 250,
+                                    child: Text(
+                                      'Ensure your email and password are correct.',
+                                      style: TextStyle(
+                                        fontSize: 14.0,
+                                        color: Colors.grey[600],
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
                           actions: [
-                            TextButton(
+                            ElevatedButton(
                               onPressed: () {
                                 Navigator.of(context).pop();
                               },
-                              child: const Text('OK'),
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor: Colors.red,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                              ),
+                              child: const Text(
+                                'OK',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ],
                         );
