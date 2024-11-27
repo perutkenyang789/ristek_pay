@@ -36,7 +36,6 @@ class PrePage extends StatelessWidget {
                 fontSize: 40.58,
                 fontWeight: FontWeight.w800,
                 color: Theme.of(context).colorScheme.secondary,
-                fontFamily: 'Inter',
               ),
             ),
 
@@ -52,7 +51,6 @@ class PrePage extends StatelessWidget {
                 fontSize: 18.55,
                 fontWeight: FontWeight.w400,
                 color: Colors.black,
-                fontFamily: 'Inter',
               ),
             ),
 
@@ -80,7 +78,6 @@ class PrePage extends StatelessWidget {
                     fontSize: 18.55,
                     fontWeight: FontWeight.w600,
                     color: Theme.of(context).colorScheme.tertiary,
-                    fontFamily: 'Inter',
                   ),
                 )),
           ],

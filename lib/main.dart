@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
           secondary: HexColor('#5038BC'),
           tertiary: HexColor('#FFFFFF'),
         ),
-        textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme),
+        textTheme: GoogleFonts.poppinsTextTheme(),
       ),
-      home: const PrePage(),
+      home: PrePage(),
     );
   }
 }

@@ -64,7 +64,7 @@ class LoginPage extends StatelessWidget {
                       passwordController.text == '123456') {
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
-                        builder: (context) => const HomePage(),
+                        builder: (context) => HomePage(),
                       ),
                     );
                   } else {
@@ -97,7 +97,6 @@ class LoginPage extends StatelessWidget {
                   textStyle: const TextStyle(
                     fontSize: 16.0,
                     fontWeight: FontWeight.w700,
-                    fontFamily: 'Inter',
                   ),
                 ),
                 child: const Text(
@@ -106,7 +105,6 @@ class LoginPage extends StatelessWidget {
                     fontSize: 15.0,
                     fontWeight: FontWeight.w700,
                     color: Colors.black,
-                    fontFamily: 'Inter',
                   ),
                 ),
               )

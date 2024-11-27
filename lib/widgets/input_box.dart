@@ -32,7 +32,6 @@ class InputBox extends StatelessWidget {
               fontSize: 14.0,
               fontWeight: FontWeight.w500,
               color: Theme.of(context).colorScheme.tertiary,
-              fontFamily: 'Inter',
             ),
           ),
           // Spacing
@@ -46,7 +45,6 @@ class InputBox extends StatelessWidget {
               hintStyle: const TextStyle(
                 fontSize: 14.0,
                 fontWeight: FontWeight.w400,
-                fontFamily: 'Inter',
               ),
               filled: true,
               border: OutlineInputBorder(
